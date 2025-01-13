@@ -1,0 +1,133 @@
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: #444;
+}
+
+#operacion{
+    font-size: 20px;
+    color: #aaa;
+}
+
+.teclado{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parteIzquierda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.parteIzquierda ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0;
+}
+
+.parteDerecha{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+}
+
+.parteDerecha ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0;
+}
+
+.boton, .operador{
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.boton:hover, .operador:hover{
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton:active, .operador:active{
+    transform: scale(0.95);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#sumar{
+    height: 220%;
+}
+
+
+#numdot{
+    width: 100%;
+}
+
+.operador{
+    margin-left: -10px;
+    width: 100%;
+}
+
+#sumar{
+    background-color: #3bdf51;
+    color:white
+}
+
+
+#igual{
+    background-color: #ffef5c;
+}
+
+#ce{
+    background-color: rgb(44, 202, 255);
+}
+
+#c{
+    background-color: #ff3737;
+}
+
+h1{
+    font-size: 30px;
+    color: #444;
+}
